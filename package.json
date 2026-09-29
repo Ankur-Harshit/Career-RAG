@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "ingest": "node scripts/ingest_jobs.js",
+    "search": "node scripts/retrieve_jobs.js",
+    "test:embeddings": "node tests/test_embeddings.js",
+    "test:supabase": "node tests/test_supabase.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@supabase/supabase-js": "^2.78.0",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  }
+}
