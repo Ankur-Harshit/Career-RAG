@@ -7,7 +7,7 @@ import { explainJobs } from "./jobReasoningService.js";
 export async function searchJobs(query, filters = {}, limit = 5) {
   const parsedQuery = await understandQuery(query);
 
-  const queryEmbedding = await generateEmbedding(parsedQuery.semantic_query);
+  const queryEmbedding = await generateEmbedding(query);
 
   const { data, error } = await matchJobs(queryEmbedding, parsedQuery, limit);
 

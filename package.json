@@ -4,13 +4,22 @@
     "ingest": "node scripts/ingest_jobs.js",
     "search": "node scripts/retrieve_jobs.js",
     "test:embeddings": "node tests/test_embeddings.js",
-    "test:supabase": "node tests/test_supabase.js"
+    "test:supabase": "node tests/test_supabase.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "@google/genai": "^1.0.0",
     "@supabase/supabase-js": "^2.78.0",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "csv-parse": "^7.0.3",
     "dotenv": "^18.0.4",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.4",
+    "nodemon": "^3.1.14",
+    "validator": "^13.15.35"
   }
 }
